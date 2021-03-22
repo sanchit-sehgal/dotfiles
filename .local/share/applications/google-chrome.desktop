@@ -1,0 +1,29 @@
+[Desktop Action new-private-window]
+Exec=/usr/bin/google-chrome-stable --incognito
+Name=New Incognito Window
+StartupWMClass=Google-chrome
+
+[Desktop Action new-window]
+Exec=/usr/bin/google-chrome-stable
+Name=New Window
+StartupWMClass=Google-chrome
+
+[Desktop Entry]
+Actions=new-window;new-private-window;
+Categories=Network;WebBrowser;
+Comment=Access the Internet
+Exec=/usr/bin/google-chrome-stable %U
+GenericName=Web Browser
+Icon=browser-tor
+Name=Google Chrome
+NoDisplay=false
+Path[$e]=
+StartupNotify=true
+StartupWMClass=Google-chrome
+Terminal=0
+TerminalOptions=
+Type=Application
+Version=1.0
+X-KDE-SubstituteUID=false
+X-KDE-Username=
+MimeType=x-scheme-handler/webcal;x-scheme-handler/mailto;application/pdf;application/rdf+xml;application/rss+xml;application/xhtml+xml;application/xhtml_xml;application/xml;image/gif;image/jpeg;image/png;image/webp;text/html;text/xml;x-scheme-handler/http;x-scheme-handler/https;

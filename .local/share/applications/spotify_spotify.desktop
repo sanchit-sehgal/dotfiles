@@ -1,0 +1,18 @@
+[Desktop Entry]
+Categories=Audio;Music;Player;AudioVideo;
+Comment=
+Exec=env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/spotify_spotify.desktop /var/lib/snapd/snap/bin/spotify %U
+GenericName=Music Player
+Icon=eu.tiliado.NuvolaAppSpotify
+MimeType=x-scheme-handler/spotify;
+Name=Spotify
+NoDisplay=false
+Path[$e]=
+StartupNotify=true
+StartupWMClass=spotify
+Terminal=0
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=
+X-SnapInstanceName=spotify

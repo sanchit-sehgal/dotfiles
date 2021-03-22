@@ -1,0 +1,23 @@
+[Desktop Action New]
+Exec=alacritty
+Name=New Terminal
+
+[Desktop Entry]
+Actions=New;
+Categories=System;TerminalEmulator;
+Comment=A fast, cross-platform, OpenGL terminal emulator
+Exec=konsole
+GenericName=Terminal
+Icon=Alacritty
+Name=Alacritty
+NoDisplay=false
+Path[$e]=
+StartupNotify=true
+StartupWMClass=Alacritty
+Terminal=0
+TerminalOptions=
+TryExec=alacritty
+Type=Application
+X-Desktop-File-Install-Version=0.26
+X-KDE-SubstituteUID=false
+X-KDE-Username=
