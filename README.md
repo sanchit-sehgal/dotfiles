@@ -26,5 +26,14 @@ I am new to Unix and dotfiles. If there are any issues with this, please open a 
 
 ## Screenshots
 
-[/screenshots/screenshot.png]
+![alt text](https://github.com/sanchit-sehgal/dotfiles/blob/main/screenshots/screenshot.png)
+
+
+
+
+![alt text](https://github.com/sanchit-sehgal/dotfiles/blob/main/screenshots/screenshot2.png)
+
+
+
+
 
