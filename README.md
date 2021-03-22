@@ -26,5 +26,5 @@ I am new to Unix and dotfiles. If there are any issues with this, please open a 
 
 ## Screenshots
 
-[/screenshots/screenshot1.png]
+[/screenshots/screenshot.png]
 
