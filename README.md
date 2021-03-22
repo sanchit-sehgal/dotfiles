@@ -18,4 +18,5 @@ Alright, here we go. My main setup for my Unix rice is:
 |   **Cursors** | McMojave |
 |   **Splash Screen** | Nordic |
 |   **Dock** | Latte |
+|   **GTK Theme** | Nordic-bluish-accent |
  
