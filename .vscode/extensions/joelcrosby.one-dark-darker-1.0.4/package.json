@@ -1,0 +1,43 @@
+{
+	"name": "one-dark-darker",
+	"displayName": "One Dark Darker",
+	"description": "A Darker more minimal version of Binaryify's One Dark Pro Theme.",
+	"version": "1.0.4",
+	"publisher": "JoelCrosby",
+	"engines": {
+		"vscode": "^1.26.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/JoelCrosby/OneDarkDarker"
+	},
+	"categories": [
+		"Themes"
+	],
+	"icon": "icon.png",
+	"keywords": [
+		"one dark",
+		"onedark",
+		"one dark darker",
+		"darker",
+		"theme"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "One Dark Darker",
+				"uiTheme": "vs-dark",
+				"path": "./themes/OneDarkDarker-color-theme.json"
+			}
+		]
+	},
+	"galleryBanner": {
+		"color": "#2d323b",
+		"theme": "dark"
+	},
+	"__metadata": {
+		"id": "72ca08e8-34a8-46a9-a351-04d83b897db0",
+		"publisherId": "0847cd58-eb10-4d58-a26a-d7c7cb094a2a",
+		"publisherDisplayName": "Joel Crosby"
+	}
+}

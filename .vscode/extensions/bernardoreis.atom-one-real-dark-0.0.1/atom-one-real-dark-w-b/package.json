@@ -1,0 +1,22 @@
+{
+    "name": "atom-one-real-dark-w-b",
+    "displayName": "Atom One Real Dark (With status bar)",
+    "description": "It's Atom One color theme but it is really dark, and have color in status bar",
+    "publisher": "BernardoReis",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.44.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Atom One Real Dark (With status bar)",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Atom One Real Dark (With status bar)-color-theme.json"
+            }
+        ]
+    }
+}

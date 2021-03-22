@@ -1,0 +1,49 @@
+{
+	"name": "deep-blue-theme",
+	"displayName": "Deep Blue",
+	"description": "Simple dark blue theme",
+	"version": "1.1.1",
+	"publisher": "juliankaindl",
+	"scripts": {
+		"generate-demo": "./scripts/generate.sh",
+		"publish-major": "vsce publish major",
+		"publish-minor": "vsce publish minor",
+		"publish-patch": "vsce publish patch"
+	},
+	"engines": {
+		"vscode": "^1.35.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/KaindlJulian/deep-blue-theme.git"
+	},
+	"icon": "logo.png",
+	"galleryBanner": {
+		"color": "#090E36",
+		"theme": "dark"
+	},
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"theme",
+		"dark",
+		"deep",
+		"blue",
+		"yellow"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Deep Blue",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Deep Blue.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "44122420-30e3-4d57-a763-2277acef52f5",
+		"publisherId": "9ab45f9b-494a-4e0a-af52-8a918593b246",
+		"publisherDisplayName": "Julian Kaindl"
+	}
+}

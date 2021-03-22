@@ -1,0 +1,132 @@
+.member-switch {
+    --custom-var: 1040px;
+    width: var(--custom-var);
+    background-color: clr(background);
+    height: 100%;
+    h1 {
+        color: clr(brand, cyan);
+    }
+    @media (min-width: 1040px) {
+        background-color: clr(background, secondary);
+        border-radius: 25px;
+        height: unset;
+    }
+}
+.polygon {
+    clip-path: url(#poly-clip);
+    min-width: 232px;
+}
+.carousel {
+    height: 280px;
+    .previous,
+    .next {
+        user-select: none;
+        top: 116px;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        cursor: pointer;
+        &:hover,
+        &:focus {
+            background-color: clr(background, bright);
+        }
+    }
+    .previous {
+        left: 370px;
+        @media (max-width: 1040px) {
+            left: 20px;
+        }
+    }
+    .next {
+        right: 370px;
+        @media (max-width: 1040px) {
+            right: 20px;
+        }
+    }
+    .image-wrapper {
+        .center-overlay {
+            position: absolute;
+            background-color: clr(brand, cyan);
+            width: 232px;
+            height: 232px;
+            opacity: 0;
+            transition: opacity 0.15s ease;
+            &:hover {
+                opacity: 0.7;
+            }
+            img {
+                transition: transform 0.2s ease;
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+    img {
+        transition: transform 0.4s ease, opacity 0.3s ease;
+    }
+    .before-oc {
+        transform: translate3d(-500px, 200px, 0) rotate(-30deg) scale(0.5);
+        opacity: 0;
+    }
+    .before {
+        transform: translate3d(-300px, 50px, 0) rotate(-20deg) scale(0.8);
+        cursor: pointer;
+        &:hover {
+            filter: brightness(0.8);
+        }
+        @media (max-width: 1040px) {
+            opacity: 0;
+        }
+    }
+    .current {
+        transform: none;
+    }
+    .after {
+        transform: translate3d(300px, 50px, 0) rotate(20deg) scale(0.8);
+        cursor: pointer;
+        &:hover {
+            filter: brightness(0.8);
+        }
+        @media (max-width: 1040px) {
+            opacity: 0;
+        }
+    }
+    .after-oc {
+        transform: translate3d(500px, 200px, 0) rotate(30deg) scale(0.5);
+        opacity: 0;
+    }
+    .hidden-oc {
+        opacity: 0;
+    }
+}
+.information {
+    h2,
+    h3 {
+        font-weight: normal;
+    }
+    h3,
+    p {
+        color: clr(text, secondary);
+    }
+    p {
+        max-width: 230px;
+        height: 80px;
+    }
+}
+.fade-right-enter-active,
+.fade-right-leave-active,
+.fade-left-enter-active,
+.fade-left-leave-active {
+    transition: all 0.4s ease;
+}
+.fade-right-enter,
+.fade-right-leave-to {
+    opacity: 0;
+    transform: translateX(-200px);
+}
+.fade-left-enter,
+.fade-left-leave-to {
+    opacity: 0;
+    transform: translateX(200px);
+}

@@ -1,0 +1,44 @@
+{
+	"name": "github-blue",
+	"displayName": "Github Blue",
+	"description": "GitHub Blue theme - As seen from GitHub's home page.",
+	"version": "1.0.7",
+	"publisher": "larxx",
+	"icon": "icon.png",
+	"engines": {
+		"vscode": "^1.53.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"galleryBanner": {
+		"color": "#1b1f23",
+		"theme": "dark"
+	},
+	"keywords": [
+		"theme",
+		"dark",
+		"blue",
+		"github theme",
+		"github",
+		"blue theme"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/larxx/github-blue"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"label": "GitHub Blue",
+				"uiTheme": "vs-dark",
+				"path": "./themes/github-blue-color-theme.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "8c24dc07-bf80-47ad-a83f-5a6985c2a833",
+		"publisherId": "c285a6a7-ad55-49bb-b89f-2e031592d45d",
+		"publisherDisplayName": "Larxx"
+	}
+}

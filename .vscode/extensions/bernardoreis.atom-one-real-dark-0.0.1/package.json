@@ -1,0 +1,27 @@
+{
+	"name": "atom-one-real-dark",
+	"displayName": "Atom One Real Dark",
+	"description": "It's Atom One color theme, but it is really dark.",
+	"publisher": "BernardoReis",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.44.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Atom One Real Dark",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Atom One Real Dark-color-theme.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "47c20b59-d9c6-4ced-b1cd-4072b001308a",
+		"publisherId": "ee62e1d0-3310-4a2d-b70a-57138d9d31ca",
+		"publisherDisplayName": "Bernardo Reis"
+	}
+}

@@ -1,0 +1,47 @@
+{
+	"name": "preparing",
+	"displayName": "Dark",
+	"description": "Theme designed in a naruto style, but more darker",
+	"version": "1.4.1",
+	"publisher": "Thomaz",
+	"author": "Thomaz",
+	"icon": "logo.png",
+	"galleryBanner": {
+		"color": "090b10",
+		"theme": "dark"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Thomaz-Peres/Theme"
+	},
+	"engines": {
+		"vscode": "^1.47.0"
+	},
+	"categories": [
+		"Themes",
+		"Other"
+	],
+	"keywords": [
+		"VSCode",
+		"Themes",
+		"naruto",
+		"dark",
+		"themes",
+		"theme",
+		"color-theme"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "NarutoDark",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Narutovisk-color-theme.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "669407de-c51c-44eb-a05a-c9c66ffd4a83",
+		"publisherId": "69415be6-e946-4c05-889a-46ddc23cbfde",
+		"publisherDisplayName": "Thomaz"
+	}
+}

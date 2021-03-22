@@ -1,0 +1,32 @@
+version: '3'
+services:
+    mongo:
+        container_name: mongo
+        image: mongo
+        volumes:
+            - ./server/data:/data/db
+        ports:
+            - '27017'
+    server:
+        container_name: server
+        restart: always
+        build: ./server
+        ports:
+            - '50051'
+        depends_on:
+            - mongo
+    envoy:
+        container_name: envoy
+        restart: always
+        build: ./envoy
+        ports:
+            - '9211'
+        depends_on:
+            - server
+    web:
+        container_name: web_prod
+        build: ./client
+        ports:
+            - '80:80'
+        depends_on:
+            - envoy
