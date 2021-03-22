@@ -35,5 +35,9 @@ I am new to Unix and dotfiles. If there are any issues with this, please open a 
 
 
 
+![alt text](https://github.com/sanchit-sehgal/dotfiles/blob/main/screenshots/vscodescreenshot.png)
+
+
+
 
 
