@@ -23,3 +23,5 @@ Alright, here we go. My main setup for my Unix rice is:
 ## Disclaimer
 
 I am new to Unix and dotfiles. If there are any issues with this, please open a new issue report. It'd be helpful. I have included all of the files here that I have modified/others have requested. 
+
+## Screenshots
