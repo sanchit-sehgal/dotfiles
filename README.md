@@ -19,6 +19,7 @@ Alright, here we go. My main setup for my Unix rice is:
 |   **Splash Screen** | Nordic |
 |   **Dock** | Latte |
 |   **GTK Theme** | Nordic-bluish-accent |
+|   **Discord Theme** | BeautifulDiscord |
  
 ## Disclaimer
 
