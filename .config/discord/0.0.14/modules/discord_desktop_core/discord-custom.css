@@ -1,601 +1,508 @@
-@import url("https://discordstyles.github.io/AdjustableServerWidth/base.css");
-@import url("https://goldenlys.github.io/BetterDiscord-Elysia/HoverMemberList.css");
+/**
+ * @name Nord
+ * @version 1.0.0
+ * @description A theme for discord inspired by the deep blues of the Atlantic
+ * @website https://github.com/Daggy1234/Nord
+ */
 
-.membersWrap-2h-GB4 {
-    -webkit-transform: translateX(205px);
-    transform: translateX(205px);
-    position: absolute;
-}
+
+
 
 :root {
-  --server-icon-size: 45px; /* Size of the server icons | DEFAULT: 35px */
-  --server-icon-spacing: 10px; /* Spacing between server icons. Negative values are allowed | DEFAULT: 8px */
-  --server-container-padding: 15px; /* Spacing to the left and right sides of server icons | DEFAULT: 10px */
+    /* Color palette */
+    --nord-primary: #000720;
+    --nord-secondary: #1c2341;
+    --nord-secondary-alt: #396cb335;
+    --nord-tertiary: #000720;
+    --nord-accent-color : #dadfe1;
+    --nord-input-box: #396cb335;
+    --nord-frost-blue: #88c0d0;
+    --nord-frost-dark-blue: #5e81ac;
+
+    /* Scrollbar */
+    --nord-scrollbar-track: var(--nord-primary);
+    --nord-scrollbar-thumb: var(--nord-secondary);
 }
-
-/* Font */
-
-@font-face {
-	font-family: 'Baloo2';
-	font-style: normal;
-	font-weight: 200;
-	font-display: swap;
-	src: url(https://fonts.gstatic.com/s/baloo2/v1/wXKrE3kTposypRyd51jcAA.woff2) format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+html.theme-light::before {
+    content: "This is a dark mode theme. Maybe find a good light mod e theme lol";
+    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: var(--nord-primary);
+    text-align: center;
+    position: absolute;
+    z-index: 10001;
+    right: 0;
+    left: 0;
 }
-
-::-webkit-input-placeholder, body, button, input, select, textarea {
-	font-family: var(--font, "Sarasa UI HC"), Whitney;
-}
-
-
 .theme-dark {
-    --background-primary: #2a2f33;
-    --background-secondary: #31363b;
-    --background-tertiary: #312e35;
-    --background-accent: #504945;
-    --text-normal: #bfddb2;
-    --text-spotify: #B3CFA8;
-    --text-muted: #bdae93;
-    --text-link: #458588;
-    --background-floating: #31363b;
-    --header-primary: #B3CFA7;
-    --header-secondary: #bdae93;
-    --header-spotify: #b8bb26;
-    --interactive-normal: #B3CFA7;
-    --interactive-hover: #bdae93;
-    --interactive-active: #B3CFA8;
-
+    --background-primary: var(--nord-primary);
+    --background-secondary: var(--nord-secondary);
+    --background-secondary-alt: var(--nord-secondary-alt);
+    --background-tertiary: var(--nord-tertiary);
+    --background-accent: var(--nord-frost-blue);
+    --header-primary: var(--nord-accent-color);
+    --interactive-active: var(--nord-accent-color);
+    --local-bot-side: var(--nord-frost-blue);
+    /* Chat input box */
+    --channeltextarea-background: var(--nord-input-box);
+    --scrollbar-auto-thumb: var(--nord-secondary);
+    --scrollbar-auto-track: var(--nord-primary);
 }
 
-::-webkit-scrollbar,
-::-webkit-scrollbar-track,
-::-webkit-scrollbar-track-piece {
-    background: transparent !important;
-    -webkit-box-shadow: none !important;
-    -moz-box-shadow: none !important;
-    box-shadow: none !important;
-    border: none !important;
-    width:5px !important;
-}
-::-webkit-scrollbar-thumb {
-    background: var(--background-secondary) !important;
-    width:5px !important;
-    border:none !important;
-    border-radius: 0px !important;
-}
+/* People column */
+.theme-dark .container-1D34oG { background-color: var(--background-primary); }
 
-/* Guild menu (discord forces light theme) */
-div[class*="wrapper"][class*="fixClipping"]{
-    background-color: var(--background-secondary);
+/* Modals */
+.theme-dark .root-1gCeng { background-color: var(--background-primary); }
+.theme-dark .footer-2gL1pp { background-color: var(--background-tertiary); }
+
+/* Popup when you click a mention */
+.theme-dark .headerNormal-T_seeN { background-color: var(--background-tertiary); }
+.theme-dark .body-3iLsc4, .theme-dark .footer-1fjuF6 { background-color: var(--background-secondary); }
+
+/* Mention autocompletion in chat box */
+.theme-dark .autocomplete-1vrmpx { background-color: var(--background-tertiary) }
+.theme-dark .selected-1Tbx07 { background-color: var(--background-secondary); }
+
+.theme-dark .item-2hkk8m {
+    background-color: var(--header-primary);
 }
 
-/* New Messages Bar */
-div[class*="newMessagesBar"] {
-    background-color: var(--background-secondary);
+/* Assets are all white*/
+.theme-dark svg {
+    color: #5c6b80;
 }
 
-/* Hide the action bar nametag and status */
-section > div[class*="container"] > [class*='nameTag-'] {
-    display:none;
+.theme-dark .premiumIcon-1rDbWQ {
+    color: #ff73fa;
 }
 
-/* Center buttons in the panels container */
-div[class*="sidebar"] > [class*='panels-'] [class*='container-']{
-    display:flex;
-    flex-flow:row wrap;
-    justify-content: center;
+.theme-dark .ownerIcon-2NH9FM {
+    color: #faa61a;
+}
+/* Discord mentions*/
+.theme-dark .mentioned-xhSam7:before {
+    background-color: #6ba9ff;
 }
 
-/* Credit to craftxbox */
-
-/* Mentions (channel, user) */
-span[class*="mention"][class*="interactive"] {
-    color: var(--text-link);
+.theme-dark .mentioned-xhSam7 {
+    background-color: var(--nord-input-box);
 }
 
-/* Mentions (role) */
-span[class*="mention"] {
-    color: var(--text-link);
+/* Discord Codeblocks */
+.theme-dark code {
+    background-color: var(--nord-input-box);
 }
 
-div[class^="scrollableContainer"] {
-    background-color: var(--background-secondary);
-}
-
-div[class^="name"] > span {
-    color: var(--text-normal);
-}
-
-h1, h2, h3 {
-    color: var(--text-normal);
-}
-
-h3[class^="title"] {
-    color: var(--text-normal);
-}
-
-div[class^="panels"] > div[class^="container"] {
-    background-color: var(--background-secondary);
-}
-
-div[class^="wrapper"] > div[class^="container"] {
-    background-color: var(--background-tertiary);
-}
-
-section[class^="panels"] > div[class^="container"] > div[class^="nameTag"] > * {
-    color: var(--text-normal);
-}
-
-section[class^="panels"] > div[class^="container"] {
-    background-color: var(--background-secondary);
-}
-
-div.userSettingsAccount-2eMFVR > div > div {
+.theme-dark .inline {
     background-color: var(--background-primary);
 }
 
-* > div[class^="contents"] {
-    color: var(--text-normal)
+.theme-dark .hljs {
+    background-color: var(--nord-input-box);
 }
 
-div[class^="size14"] {
-    color: var(--text-normal);
-}
-
-div[class^="topic"] {
-    color: var(--text-muted);
-}
-
-div[class^="friendsTable"] {
-    background-color: var(--background-primary);
-}
-
-[class^="input"] {
-    background-color: var(--background-primary);
-}
-
-div[class^="uploadModal"] > div[class^="inner"], div[class^="inner"] > div[class^="uploadModal"], div[class^="uploadModal"] > div[class^="footer"] {
-    background-color: var(--background-primary);
-}
-
-[class^="usernameContainer"]:not([style]){
-    color: var(--text-normal)
-}
-
-div[class^="username"] {
-    background-color: inherit;
-}
-
-span[class^="wrapperHover"][role="button"] {
-    color: var(--text-link)
-}
-
-[class^="autocompleteInner"] {
-    background-color: var(--background-secondary)
-}
-
-
-a[class^="wrapper"] {
-    color: var(--text-normal)
-}
-
-[class^="tooltipRight"] {
-    color: var(--text-normal)
-}
-
-div[role="dialog"] {
-    color: var(--background-primary)
-}
-
-div[class*="activityPanel"] {
-    background-color: var(--background-secondary)
-}
-
-div[class^="text"] {
-    color: var(--text-normal)
-}
-
-div[class^="side"] > div[class^="item"] {
-    background-color: var(--background-secondary)
-}
-
-[class^="userInfoViewing"] {
-    background-color: var(--background-secondary);
-}
-
-[class*="lookFilled"][class*="colorBrand"] {
-    background-color: var(--text-link);
-}
-
-div[class*="tooltip"] {
-    background-color: var(--background-secondary);
-}
-div[class*="contextMenu"] {
-    background-color: var(--background-secondary);
-}
-
-div[class*="header"] {
-    background-color: var(--background-secondary)
-}
-
-div[class*="details"] {
-    color: var(--text-normal);
-}
-
-div[class*="headerTextNormal"] {
-    background-color: var(--background-secondary);
-}
-
-span {
-    color: var(--text-normal)
-}
-
-span[class*="headerName"] {
-    color: var(--text-normal)
-}
-
-div[class*="userPopout"] > div[class*="footer"] {
-    background-color: var(--background-primary)
-}
-
-div[class*="scrollerWrap"][class*="body"] > div[class*="scroller"] {
-    background-color: var(--background-primary)
-}
-
-[class*="footer"] > [class*="quickMessage"] {
-    background-color: var(--background-primary)
-}
-
-div[class^="topSectionPlaying"] > header[class^="header"] {
-    background-color: var(--background-secondary);
-}
-
-header[class^="title"] {
-    color: var(--text-normal)
-}
-
-div[class^="tabBody"] {
-    background-color: var(--background-primary);
-}
-
-div[class^="topSectionNormal"] > header > div[class^="headerInfo"]{
-    background-color: inherit;
-}
-
-div[class^="topSectionSpotify"] > header > div[class^="headerInfo"]{
-    background-color: inherit;
-}
-
-div[class^="topSectionSpotify"] {
-    background-color: var(--header-spotify);
-}
-
-div[class*="nameNormal"][class*="ellipsis"][class*="textRow"][class*="weightSemiBold"] > a {
-    color: var(--text-normal)
-}
-
-div[class*="detailsWrap"][class*="textRow"] > span > a {
-    color: var(--text-normal);
-}
-
-div[class*="state"][class*="ellipsis"][class*="textRow"] > span > a {
-    color: var(--text-normal);
-}
-
-div[class^="headerTextNormal"][class*="headerText"][class*="small"][class*="marginBottom8"][class*="weightBold"] {
-    color: var(--text-normal);
-    background-color: var(--background-secondary);
-    background: transparent !important;
-}
-
-div[class*="details"][class*="ellipsis"][class*="textRow"] {
-    color: var(--text-normal)
-}
-
-div[class*="timestamp"] {
-    color: var(--text-normal)
-}
-
-section[class^="section"] {
-    background-color: var(--background-secondary);
-}
-
-div[class*="container"] > div[class*="contentWrapper"] {
-    background-color: var(--background-secondary);
-}
-
-div[class*="selectorSelected"][class*="selector"] {
-    background-color: var(--background-tertiary);
-}
-
-div[class*="selectorSelected"][class*="selector"] > * > div[class*="marginLeft"] {
-    color: var(--text-normal)
-}
-
-div[class*="selectorSelected"][class*="selector"] > * > div[class*="colorStandard"] {
-    color: var(--text-muted);
-}
-
-[class*="selector"] > * > div[class*="marginLeft"] {
-    color: var(--text-normal)
-}
-
-[class*="selector"] > * > div[class*="colorStandard"] {
-    color: var(--text-muted);
-}
-
-
-
-div[class*="infoBar"] {
-    background-color: var(--background-tertiary);
-}
-
-div[class*="body"][class*="scrollerBase"][class*="thin"] {
-    background-color: var(--background-primary);
-}
-
-/* Fix text colour when Spotify is playing */
-div[class*="topSectionSpotify"] > header > div[class*="headerInfo"] > div[class*="nameTag"] > * {
-    color: var(--text-spotify);
-}
-
-/* Fix button colours */
-div[class*="topSectionSpotify"] > header > button[class*="actionButton"] {
-    background-color: var(--background-tertiary);
-}
-
-div[class*="topSectionNormal"] > header > button[class*="actionButton"] {
-    background-color: var(--background-secondary);
-}
-
-div[class*="topSectionPlaying"] > header > button[class*="actionButton"] {
-    background-color: var(--background-tertiary);
-}
-
-/** Search **/
-div[class*="resultsGroup"] {
-    background-color: var(--background-secondary);
-}
-
-div[class*="resultsGroup"] > div[class*="option"]::after {
-    background-color: var(--background-secondary);
-    background: transparent
-}
-
-div[class*="resultsGroup"] > div[class*="option"]:hover {
-    background-color: var(--background-primary);
-}
-
-/** Channel topic **/
-div[class*="layerContainer"] > div[class*="layer"] > div[class*="focusLock"] > div[class*="modal"] > div[class*="content"] {
-    background-color: var(--background-secondary);
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-
-/** Playing statuses */
-* > div[class*="activityText"] {
-    color: var(--text-muted);
-}
-
-* > svg {
-    color: var(--interactive-hover)
-}
-
-/** Header fixes */
-* > span[class*="activityName"] {
-    color: var(--text-normal)
-}
-
-div[class*="activityUserPopout"] > h3[class*="headerTextNormal"][class*="headerText"] {
-   color: var(--text-normal);
-}
-
-/** Role names */
-div[class*="roleName"] {
-
-    color: var(--text-normal);
-}
-
-/** That discord icon on the top left */
-.wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9 {
-    background-color: var(--background-primary);
-}
-.wrapper-1BJsBx .childWrapper-anI2G9 {
-    background-color: var(--background-primary);
-}
-
-/** and the pill beside it */
-div[class*="pill"] > span[class*="item"] {
-    background-color: var(--background-primary)
-}
-
-/** Deleted Messages */
-div[class*="focusLock"] > div[class*="root"] > div[class*="content"] {
-    background-color: var(--background-secondary);
-}
-div[class*="focusLock"] > div[class*="root"] > div[class*="content"] > div[class*="message"] {
-    background-color: var(--background-tertiary);
-}
-
-div[class*="focusLock"] > div[class*="root"] > div[class*="flex"] {
-    background-color: var(--background-secondary);
-}
-
-/** Bot Tags */
-span[class*="botTag"] {
-    background-color: var(--text-link)
-}
-
-/** Discover Guilds */
-div[class*="circleIconButton"][class*="selected"] {
-    background-color: var(--background-secondary);
-}
-
-div[class*="dragRegion"] {
-    background-color: var(--background-secondary);
-}
-
-div[class*="container"] > div[class*="base"] > div[class*="content"] div[class*="scroller"][class*="auto"] {
-    background-color: var(--background-primary);
-}
-
-section[class*="guildListSection"] > div[class*="guildList"] > div[class*="loaded"] > div[class*="card"] {
-    background-color: var(--background-tertiary);
-}
-
-div[class*="searchBox"] {
-    border-color: var(--background-secondary);
-}
-
-div[class*="searchBox"] > div[class*="inputWrapper"] {
-    background-color: var(--background-tertiary);
-
-}
-
-div[class*="headerContentWrapper"] {
-    background-color: var(--background-primary);
-}
-
-div[class*="headerContentWrapper"] > div[class*="headerContent"] {
-    background-color: var(--background-primary);
-}
-
-div[class*="container"] > div[class*="search"] {
+/* Embeds with no explicit color set*/
+.theme-dark .embed-IeVjo5 {
     border-color: var(--background-primary);
-    color: var(--background-primary);
 }
 
-div[class*="headerContentWrapper"] > div[class*="headerContent"] > * {
-    color: var(--text-normal)
+/* Do not Disturb Status*/
+.theme-dark rect[mask="url(#svg-mask-status-dnd)"] {
+    fill: #bf616a;
 }
 
-div[class*="categoryItem"][class*="selected"] > div[class*="itemInner"] {
-    background-color: var(--text-link);
-}
-div[class*="categoryItem"][class*="selected"] > div[class*="itemInner"] > * {
-    color: var(--text-normal)
+.theme-dark rect[mask="url(#svg-mask-status-online)"] {
+  fill: #a3be8c;
 }
 
-/* Support new integrations menu */
-div[class*="flex"][class*="justifyStart"] > button[class*="copyButton"] {
-    background-color: var(--background-tertiary);
+.theme-dark rect[mask="url(#svg-mask-status-idle)"] {
+  fill: #ebcb8b;
 }
 
-div[class*="flex"][class*="vertical"][class*="directionColumn"] > div[class*="body"] {
+.theme-dark rect[mask="url(#svg-mask-status-online-mobile)"] {
+  fill: #a3be8c;
+}
+
+/* Mention Badge*/
+.theme-dark .numberBadge-2s8kKX {
+    background-color: var(--nord-frost-dark-blue)!important;
+}
+/* Search Modal */
+.theme-dark .open-6_Y_aH {
     background-color: var(--background-secondary);
 }
 
-/* Fix Invites */
-div[class*="customScroller"] > div[class*="listContent"] > div[class*="headerSection"] {
-    background-color: var(--background-primary);
+/* Quote */
+.theme-dark .blockquoteContainer-U5TVEi {
+    background-color: var(--background-secondary-alt);
+
 }
 
-div[class*="flexChild"] > h4[class*="title"] {
-    color: var(--text-muted);
-}
-div[class*="flexChild"] > div[class*="text"] {
-    color: var(--text-muted);
+/* New Reply*/
+.repliedMessage-VokQwo:before {
+    border-color: white;
 }
 
-/* Fix Nickname Menu */
-div[class*="root"] > form > div[class*="content"] {
+.theme-dark .repliedMessage-VokQwo {
+  background-color: var(--background-secondary-alt);
+  padding: 0.5em;
+  width: fit-content;
+} */
+
+
+/* Context Menus*/
+.thin-1ybCId {
     background-color: var(--background-secondary);
 }
 
-div[class*="root"] > form > div[class*="content"] > div[class*="input"] > h5[class*="colorStandard"] {
-    background-color: var(--background-secondary);
-    margin: 0;
-    color: var(--text-normal);
+.theme-dark .isUnread-3Ef-o9 {
+  border-color: var(--nord-frost-blue);
+}
+.theme-dark .unreadPill-2HyYtt {
+  fill: var(--nord-frost-blue);
+  background-color: var(--nord-frost-blue);
 }
 
 
-div[class*="root"] > form > div[class*="content"] > div[class*="input"] > div[class*="inputWrapper"] > input {
-    background-color: var(--background-tertiary);
+/* Unread Bar */
+.theme-dark .newMessagesBar-265mhP {
+  background-color: var(--nord-frost-blue);
 }
 
-div[class*="flex"][class*="horizontalReverse"][class*="directionRowReverse"] {
-    background-color: var(--background-floating);
+/* Notifs */
+.theme-dark .unreadMentionsBar-1VrBNe  {
+  background-color: var(--nord-frost-blue);
 }
 
-/* Fix "Listen Along" */
-
-/* Modal */
-div[class*="modal"] > div[class*="inner"] > div[class*="modal"] > div[class*="content"] {
-    background-color: var(--background-secondary);
+/* Active FOlder */
+.theme-dark .item-2hkk8m {
+  background-color: #81a1c1;
 }
 
-div[class*="modal"] > div[class*="inner"] > div[class*="modal"] > div[class*="content"] > div[class*="invite"] {
-    background-color: var(--background-primary);
+/* Menu Green */
+.theme-dark .container-3auIfb {
+  background-color: #a3be8c;
 }
 
-div[class*="header"][class*="inFront"] {
-    background-color: var(--background-primary);
-    color: var(--text-muted);
+ /* Bot tags not gay */
+.theme-dark .botTagRegular-2HEhHi {
+  transition: .5s;
+  background: rgba(114,137,218,0.1);
+  color: #7289da;
+}
+.theme-dark .botTagRegular-2HEhHi:hover {
+  transition: .5s;
+  background: #7289da;
+  color: #fff;
 }
 
-div[class*="flex"][class*="directionRow"][class*="alignEnd"] > div > button {
-    background-color: var(--text-link);
+/*
+ * Copyright (c) 2017-present Arctic Ice Studio <development@arcticicestudio.com>
+ * Copyright (c) 2017-present Sven Greb <development@svengreb.de>
+ *
+ * Project:    Nord highlight.js
+ * Version:    0.1.0
+ * Repository: https://github.com/arcticicestudio/nord-highlightjs
+ * License:    MIT
+ * References:
+ *   https://github.com/arcticicestudio/nord
+ */
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #2E3440;
 }
 
-div[class*="content"][class*="thin"] > div[class*="textArea"] > div[class*="scrollableContainer"] {
-    background-color: var(--background-primary);
+.hljs,
+.hljs-subst {
+  color: #D8DEE9;
 }
 
-/* Embed */
-div[id*="messages"] > div[class*="container"] > div[class*="invite"] {
-    background-color: var(--background-secondary);
+.hljs-selector-tag {
+  color: #81A1C1;
 }
 
-div[id*="messages"] > div[class*="container"] > div[class*="invite"] > * > * > div[class*="header"] {
-    background-color: var(--background-secondary);
+.hljs-selector-id {
+  color: #8FBCBB;
+  font-weight: bold;
 }
 
-div[class*="details"] > a[class*="anchor"] {
-    color: var(--text-normal);
+.hljs-selector-class {
+  color: #8FBCBB;
 }
 
-div[class*="state"] {
-    color: var(--text-normal);
+.hljs-selector-attr {
+  color: #8FBCBB;
 }
 
-div[class*="state"] > span > a[class*="anchor"] {
-    color: var(--text-normal);
+.hljs-selector-pseudo {
+  color: #88C0D0;
 }
 
-/* Tooltip fix */
-div[class*="tooltipContent"] {
-    color: var(--text-normal);
+.hljs-addition {
+  background-color: rgba(163, 190, 140, 0.5);
 }
 
-/* MessageBox fix */
-div[class*="markdown"] {
-    color: var(--text-normal);
+.hljs-deletion {
+  background-color: rgba(191, 97, 106, 0.5);
 }
 
-/* Spotify in Powercord */
-div[class="powercord-spotify"] {
-    background-color: var(--background-secondary);
+.hljs-built_in,
+.hljs-type {
+  color: #8FBCBB;
 }
 
-div[class="powercord-spotify hover"] {
-    background-color: var(--background-secondary);
+.hljs-class {
+  color: #8FBCBB;
 }
 
-/** Change Progress Bar colour */
-div[class="powercord-spotify"] > div[class*="spotify-seek"] > div[class*="spotify-seek-bar"] > * {
-    background-color: var(--header-spotify);
+.hljs-function {
+  color: #88C0D0;
 }
 
-/** Change Progress Bar colour */
-div[class="powercord-spotify hover"] > div[class*="spotify-seek"] > div[class*="spotify-seek-bar"] > * {
-    background-color: var(--header-spotify);
+.hljs-function > .hljs-title {
+  color: #88C0D0;
 }
 
-/* BetterDiscord toasts */
-/* TODO: Fix shadows of toasts */
-div[class="bd-toast"] {
-    background: var(--background-floating);
-    color: var(--text-normal);
+.hljs-keyword,
+.hljs-literal,
+.hljs-symbol {
+  color: #81A1C1;
 }
+
+.hljs-number {
+  color: #B48EAD;
+}
+
+.hljs-regexp {
+  color: #EBCB8B;
+}
+
+.hljs-string {
+  color: #A3BE8C;
+}
+
+.hljs-title {
+  color: #8FBCBB;
+}
+
+.hljs-params {
+  color: #D8DEE9;
+}
+
+.hljs-bullet {
+  color: #81A1C1;
+}
+
+.hljs-code {
+  color: #8FBCBB;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-formula {
+  color: #8FBCBB;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-link:hover {
+  text-decoration: underline;
+}
+
+.hljs-quote {
+  color: #4C566A;
+}
+
+.hljs-comment {
+  color: #4C566A;
+}
+
+.hljs-doctag {
+  color: #8FBCBB;
+}
+
+.hljs-meta,
+.hljs-meta-keyword {
+  color: #5E81AC;
+}
+
+.hljs-meta-string {
+  color: #A3BE8C;
+}
+
+.hljs-attr {
+  color: #8FBCBB;
+}
+
+.hljs-attribute {
+  color: #D8DEE9;
+}
+
+.hljs-builtin-name {
+  color: #81A1C1;
+}
+
+.hljs-name {
+  color: #81A1C1;
+}
+
+.hljs-section {
+  color: #88C0D0;
+}
+
+.hljs-tag {
+  color: #81A1C1;
+}
+
+.hljs-variable {
+  color: #D8DEE9;
+}
+
+.hljs-template-variable {
+  color: #D8DEE9;
+}
+
+.hljs-template-tag {
+  color: #5E81AC;
+}
+
+.abnf .hljs-attribute {
+  color: #88C0D0;
+}
+
+.abnf .hljs-symbol {
+  color: #EBCB8B;
+}
+
+.apache .hljs-attribute {
+  color: #88C0D0;
+}
+
+.apache .hljs-section {
+  color: #81A1C1;
+}
+
+.arduino .hljs-built_in {
+  color: #88C0D0;
+}
+
+.aspectj .hljs-meta {
+  color: #D08770;
+}
+
+.aspectj > .hljs-title {
+  color: #88C0D0;
+}
+
+.bnf .hljs-attribute {
+  color: #8FBCBB;
+}
+
+.clojure .hljs-name {
+  color: #88C0D0;
+}
+
+.clojure .hljs-symbol {
+  color: #EBCB8B;
+}
+
+.coq .hljs-built_in {
+  color: #88C0D0;
+}
+
+.cpp .hljs-meta-string {
+  color: #8FBCBB;
+}
+
+.css .hljs-built_in {
+  color: #88C0D0;
+}
+
+.css .hljs-keyword {
+  color: #D08770;
+}
+
+.diff .hljs-meta {
+  color: #8FBCBB;
+}
+
+.ebnf .hljs-attribute {
+  color: #8FBCBB;
+}
+
+.glsl .hljs-built_in {
+  color: #88C0D0;
+}
+
+.groovy .hljs-meta:not(:first-child) {
+  color: #D08770;
+}
+
+.haxe .hljs-meta {
+  color: #D08770;
+}
+
+.java .hljs-meta {
+  color: #D08770;
+}
+
+.ldif .hljs-attribute {
+  color: #8FBCBB;
+}
+
+.lisp .hljs-name {
+  color: #88C0D0;
+}
+
+.lua .hljs-built_in {
+  color: #88C0D0;
+}
+
+.moonscript .hljs-built_in {
+  color: #88C0D0;
+}
+
+.nginx .hljs-attribute {
+  color: #88C0D0;
+}
+
+.nginx .hljs-section {
+  color: #5E81AC;
+}
+
+.pf .hljs-built_in {
+  color: #88C0D0;
+}
+
+.processing .hljs-built_in {
+  color: #88C0D0;
+}
+
+.scss .hljs-keyword {
+  color: #81A1C1;
+}
+
+.stylus .hljs-keyword {
+  color: #81A1C1;
+}
+
+.swift .hljs-meta {
+  color: #D08770;
+}
+
+.vim .hljs-built_in {
+  color: #88C0D0;
+  font-style: italic;
+}
+
+.yaml .hljs-meta {
+  color: #D08770;
+}
+
