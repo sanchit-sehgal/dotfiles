@@ -1,508 +1,422 @@
 /**
- * @name Nord
- * @version 1.0.0
- * @description A theme for discord inspired by the deep blues of the Atlantic
- * @website https://github.com/Daggy1234/Nord
+ * @name Darkmode
+ * @description A theme based of the colours showcased at the official Discord Website.
+ * @author Sivert
+ * @version 1.3
+ * @source https://github.com/SivertGullbergHansen/Discord-Themes
+ * @website https://sivert.xyz
+ * @donate https://paypal.me/saiverx
+ * @authorLink https://sivert.xyz
  */
+/*
+   Copyright 2020 AryToNeX
 
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
 
+       http://www.apache.org/licenses/LICENSE-2.0
 
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+*/
+
+//META{"name":"BlurpleRecolor","description":"Replaces discords native blurple with your own color, change color in themefile.","author":"DevilBro","version":"1.0.0","authorId":"278543574059057154","invite":"Jx3TjNS","donate":"https://www.paypal.me/MircoWittrien","patreon":"https://www.patreon.com/MircoWittrien","website":"https://github.com/mwittrien/BetterDiscordAddons/tree/master/Themes/BlurpleRecolor","source":"https://raw.githubusercontent.com/mwittrien/BetterDiscordAddons/master/Themes/BlurpleRecolor/BlurpleRecolor.theme.css"}*//{}
+
+@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/BlurpleRecolor/BlurpleRecolor.css");
+@import url("https://gibbu.github.io/BetterDiscord-Themes/AdjustableServerWidth/base.css");
+@import url("https://zzzmario.github.io/modern-indicators/src/source.css");
+@import url("https://codedotspectra.github.io/themes/nocturnal/importCSS/core.css");
+@import url("https://monstrousdev.github.io/themes/addons/user-tags.css");
+@import url("https://codedotspectra.github.io/themes/core/badges.css");
+
+::-webkit-input-placeholder, body, button, input, select, textarea {
+	font-family: Whitney;
+}
 
 :root {
-    /* Color palette */
-    --nord-primary: #000720;
-    --nord-secondary: #1c2341;
-    --nord-secondary-alt: #396cb335;
-    --nord-tertiary: #000720;
-    --nord-accent-color : #dadfe1;
-    --nord-input-box: #396cb335;
-    --nord-frost-blue: #88c0d0;
-    --nord-frost-dark-blue: #5e81ac;
+    --primary: #4c566a;
+    --primaryGradient2: #4c566a;
+    --backgroundDark: #2e3440;
+    --backgroundDarker: #d8dee9;
 
-    /* Scrollbar */
-    --nord-scrollbar-track: var(--nord-primary);
-    --nord-scrollbar-thumb: var(--nord-secondary);
-}
-html.theme-light::before {
-    content: "This is a dark mode theme. Maybe find a good light mod e theme lol";
-    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
-    color: var(--nord-primary);
-    text-align: center;
-    position: absolute;
-    z-index: 10001;
-    right: 0;
-    left: 0;
-}
-.theme-dark {
-    --background-primary: var(--nord-primary);
-    --background-secondary: var(--nord-secondary);
-    --background-secondary-alt: var(--nord-secondary-alt);
-    --background-tertiary: var(--nord-tertiary);
-    --background-accent: var(--nord-frost-blue);
-    --header-primary: var(--nord-accent-color);
-    --interactive-active: var(--nord-accent-color);
-    --local-bot-side: var(--nord-frost-blue);
-    /* Chat input box */
-    --channeltextarea-background: var(--nord-input-box);
-    --scrollbar-auto-thumb: var(--nord-secondary);
-    --scrollbar-auto-track: var(--nord-primary);
+    --DangerColor: #dc3545;
+    --WarningColor: #ffc107;
+    --SuccesColor: #28a745;
+    --rs-small-spacing: 1px;
+    --rs-large-spacing: 1px;
+    --rs-width: 2px;
+    --rs-avatar-shape: 100%;
+    --rs-online-color: #a3be8c;
+    --rs-idle-color: #d08770;
+    --rs-dnd-color: #bf616a;
+    --rs-offline-color: #4c566a;
+    --rs-streaming-color: #b48ead;
+    --rs-invisible-color: #e5e9f0;
+
+    --backgroundCode: rgba(0, 0, 0, 0.35);
+    --backgroundName: rgba(0, 0, 0, 0.2);
 }
 
-/* People column */
-.theme-dark .container-1D34oG { background-color: var(--background-primary); }
-
-/* Modals */
-.theme-dark .root-1gCeng { background-color: var(--background-primary); }
-.theme-dark .footer-2gL1pp { background-color: var(--background-tertiary); }
-
-/* Popup when you click a mention */
-.theme-dark .headerNormal-T_seeN { background-color: var(--background-tertiary); }
-.theme-dark .body-3iLsc4, .theme-dark .footer-1fjuF6 { background-color: var(--background-secondary); }
-
-/* Mention autocompletion in chat box */
-.theme-dark .autocomplete-1vrmpx { background-color: var(--background-tertiary) }
-.theme-dark .selected-1Tbx07 { background-color: var(--background-secondary); }
-
-.theme-dark .item-2hkk8m {
-    background-color: var(--header-primary);
+.theme-dark{
+	--background-primary: #292841;
+	--background-secondary: #292841;
+	--background-secondary-chat: #292841;
+	--background-secondary-alt: #292841;
+	--background-tertiary: #292841;
+	--background-logo: #292841;
+	--deprecated-card-bg: #1C1B29;
+	--deprecated-store-bg: #1C1B29;
+	--background-attachments: #292841;
+	--background-search-bar: #1C1B29;
+	--background-switcher: #292841;
+	--background-chatbox: #1C1B29;
+	--background-lights-out: #000;
+	--background-pinned: #1C1B29;
+	--background-profile-expand: #292841;
+	--background-emoji: #292841;
+	--text-lights-out: #eceff4;
+	--background-titlebar: #292841;
+	--background-modifier-hover: #312F51;
 }
 
-/* Assets are all white*/
-.theme-dark svg {
-    color: #5c6b80;
+.clickable-1JJAn8.container-2Pjhx-:hover, .clickable-1JJAn8.container-2Pjhx-:hover .muted-3mU76i {
+
 }
 
-.theme-dark .premiumIcon-1rDbWQ {
-    color: #ff73fa;
+.colorable-1bkp8v.primaryDark-3mSFDl, .colorable-1bkp8v.primaryDark-3mSFDl .centerIcon-2G6o-T {
+	color: #1C1B29;
+}
+.colorable-1bkp8v.primaryDark-3mSFDl {
+	background-color: #DBE7FF;
+	color: #1C1B29 !important;
 }
 
-.theme-dark .ownerIcon-2NH9FM {
-    color: #faa61a;
-}
-/* Discord mentions*/
-.theme-dark .mentioned-xhSam7:before {
-    background-color: #6ba9ff;
+.colorable-1bkp8v.primaryDark-3mSFDl:hover .colorable-1bkp8v.primaryDark-3mSFDl, .colorable-1bkp8v.primaryDark-3mSFDl:hover .centerIcon-2G6o-T {
+	color: #DBE7FF !important;
 }
 
-.theme-dark .mentioned-xhSam7 {
-    background-color: var(--nord-input-box);
+.colorable-1bkp8v.red-33-Lnk:hover {
+	background-color:  #e7366bad;
 }
 
-/* Discord Codeblocks */
-.theme-dark code {
-    background-color: var(--nord-input-box);
+.colorable-1bkp8v.red-33-Lnk {
+	background-color:  #E7366B;
 }
 
-.theme-dark .inline {
+.markup-2BOw-j code {
+	background-color: #1C1B29;
+}
+
+ .scroller-2LSbBU::-webkit-scrollbar-track
+{
+	background-color: #292841;
+}
+
+.scroller-2LSbBU::-webkit-scrollbar
+{
+	width: 12px;
+}
+
+.scroller-2LSbBU::-webkit-scrollbar-thumb
+{
+	background-color: #1c1b29;
+}
+
+
+
+.colorDefault-2K3EoJ.focused-3afm-j, .colorDefault-2K3EoJ:hover:not(.hideInteraction-1iHO1O), .colorDefault-2K3EoJ:active:not(.hideInteraction-1iHO1O) {
+	color: #1C1B29 !important;
+}
+
+.menu-3sdvDG {
+	background-color: #1C1B29 !important;
+}
+
+.role-2irmRk {
+	border: 0 !important;
+}
+
+.theme-dark .headerNormal-T_seeN {
+    background-color: #1C1B29;
+}
+
+.theme-dark .body-3iLsc4, .theme-dark .footer-1fjuF6 {
     background-color: var(--background-primary);
+    color: hsla(0,0%,100%,.8);
 }
 
-.theme-dark .hljs {
-    background-color: var(--nord-input-box);
+.theme-dark .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scroller-2FKFPG::-webkit-scrollbar-track-piece {
+	background-color: transparent;
+	border: 4px solid transparent;
 }
 
-/* Embeds with no explicit color set*/
-.theme-dark .embed-IeVjo5 {
-    border-color: var(--background-primary);
+.theme-dark .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scroller-2FKFPG::-webkit-scrollbar-thumb {
+	background-color: #20222550;
 }
 
-/* Do not Disturb Status*/
-.theme-dark rect[mask="url(#svg-mask-status-dnd)"] {
-    fill: #bf616a;
+.theme-dark .container-1D34oG {
+	background-color: transparent;
 }
 
-.theme-dark rect[mask="url(#svg-mask-status-online)"] {
-  fill: #a3be8c;
+.theme-dark .card-FDVird:before {
+	background-color: #33363c90;
 }
 
-.theme-dark rect[mask="url(#svg-mask-status-idle)"] {
-  fill: #ebcb8b;
+.theme-dark .codeRedemptionRedirect-1wVR4b {
+	background-color: #2e344050;
+	border-color: #20222550;
 }
 
-.theme-dark rect[mask="url(#svg-mask-status-online-mobile)"] {
-  fill: #a3be8c;
+.theme-dark .pageWrapper-1PgVDX {
+	background-color: transparent;
 }
 
-/* Mention Badge*/
-.theme-dark .numberBadge-2s8kKX {
-    background-color: var(--nord-frost-dark-blue)!important;
+.withFrame-haYltI {
+	height: 18px;
+	margin-top: 0;
+	padding-top: 4px;
 }
-/* Search Modal */
-.theme-dark .open-6_Y_aH {
-    background-color: var(--background-secondary);
-}
-
-/* Quote */
-.theme-dark .blockquoteContainer-U5TVEi {
-    background-color: var(--background-secondary-alt);
-
-}
-
-/* New Reply*/
-.repliedMessage-VokQwo:before {
-    border-color: white;
-}
-
-.theme-dark .repliedMessage-VokQwo {
-  background-color: var(--background-secondary-alt);
-  padding: 0.5em;
-  width: fit-content;
-} */
-
-
-/* Context Menus*/
-.thin-1ybCId {
-    background-color: var(--background-secondary);
-}
-
-.theme-dark .isUnread-3Ef-o9 {
-  border-color: var(--nord-frost-blue);
-}
-.theme-dark .unreadPill-2HyYtt {
-  fill: var(--nord-frost-blue);
-  background-color: var(--nord-frost-blue);
-}
-
-
-/* Unread Bar */
-.theme-dark .newMessagesBar-265mhP {
-  background-color: var(--nord-frost-blue);
-}
-
-/* Notifs */
-.theme-dark .unreadMentionsBar-1VrBNe  {
-  background-color: var(--nord-frost-blue);
-}
-
-/* Active FOlder */
-.theme-dark .item-2hkk8m {
-  background-color: #81a1c1;
-}
-
-/* Menu Green */
-.theme-dark .container-3auIfb {
-  background-color: #a3be8c;
-}
-
- /* Bot tags not gay */
-.theme-dark .botTagRegular-2HEhHi {
-  transition: .5s;
-  background: rgba(114,137,218,0.1);
-  color: #7289da;
-}
-.theme-dark .botTagRegular-2HEhHi:hover {
-  transition: .5s;
-  background: #7289da;
-  color: #fff;
-}
-
-/*
- * Copyright (c) 2017-present Arctic Ice Studio <development@arcticicestudio.com>
- * Copyright (c) 2017-present Sven Greb <development@svengreb.de>
- *
- * Project:    Nord highlight.js
- * Version:    0.1.0
- * Repository: https://github.com/arcticicestudio/nord-highlightjs
- * License:    MIT
- * References:
- *   https://github.com/arcticicestudio/nord
- */
-
-.hljs {
-  display: block;
-  overflow-x: auto;
-  padding: 0.5em;
-  background: #2E3440;
-}
-
-.hljs,
-.hljs-subst {
-  color: #D8DEE9;
-}
-
-.hljs-selector-tag {
-  color: #81A1C1;
-}
-
-.hljs-selector-id {
-  color: #8FBCBB;
-  font-weight: bold;
-}
-
-.hljs-selector-class {
-  color: #8FBCBB;
-}
-
-.hljs-selector-attr {
-  color: #8FBCBB;
-}
-
-.hljs-selector-pseudo {
-  color: #88C0D0;
-}
-
-.hljs-addition {
-  background-color: rgba(163, 190, 140, 0.5);
-}
-
-.hljs-deletion {
-  background-color: rgba(191, 97, 106, 0.5);
-}
 
-.hljs-built_in,
-.hljs-type {
-  color: #8FBCBB;
+.premiumPromo-yVfLiA {
+	background-color: var(--background-secondary-chat);
+	backdrop-filter: blur(2px);
 }
 
-.hljs-class {
-  color: #8FBCBB;
+.unread-3zKkbm {
+	height: 4px;
+	width: 4px;
+	margin-top: -2px;
+	border-radius: 2px 2px 2px 2px;
 }
 
-.hljs-function {
-  color: #88C0D0;
+.jumpToPresentBar-9P20AM {
+	border-radius: 8px;
+	padding-bottom: 0;
 }
 
-.hljs-function > .hljs-title {
-  color: #88C0D0;
+.platform-win .sidebar-2K8pFh {
+	border-radius: 0;
 }
 
-.hljs-keyword,
-.hljs-literal,
-.hljs-symbol {
-  color: #81A1C1;
+.platform-osx .scroller-2TZvBN {
+    padding-top: 32px;
+    -webkit-mask: linear-gradient(#0000, #fff 32px);
 }
 
-.hljs-number {
-  color: #B48EAD;
+.platform-osx .wrapper-1Rf91z {
+    margin-top: 0;
 }
 
-.hljs-regexp {
-  color: #EBCB8B;
+.typeMacOS-3EmCyP {
+    background-color: transparent !important;
 }
 
-.hljs-string {
-  color: #A3BE8C;
+.platform-osx .unreadMentionsIndicatorTop-gA6RCh {
+    top: 32px;
 }
 
-.hljs-title {
-  color: #8FBCBB;
+.platform-osx .back-1Ess-_ {
+    -webkit-app-region: no-drag;
 }
 
-.hljs-params {
-  color: #D8DEE9;
+.platform-osx .button-2PWmas {
+    -webkit-app-region: no-drag;
 }
 
-.hljs-bullet {
-  color: #81A1C1;
+.messagesPopoutWrap-1MQ1bW {
+	background-color: var(--background-pinned);
 }
 
-.hljs-code {
-  color: #8FBCBB;
+.notice-2FJMB4 {
+	background-color: var(--background-secondary) !important;
+	border-radius: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
 }
 
-.hljs-emphasis {
-  font-style: italic;
+.emojiPicker-3m1S-j {
+	background-color: var(--background-emoji);
 }
 
-.hljs-formula {
-  color: #8FBCBB;
+.appMount-3lHmkl {
+	background-color: transparent;
 }
 
-.hljs-strong {
-  font-weight: bold;
+.app-2rEoOp {
+	background-color: transparent;
 }
 
-.hljs-link:hover {
-  text-decoration: underline;
+.attachment-33OFj0 {
+	background-color: var(--background-attachments) !important;
 }
 
-.hljs-quote {
-  color: #4C566A;
+.header-2o-2hj {
+	-webkit-box-shadow: none;
+	box-shadow: none;
 }
 
-.hljs-comment {
-  color: #4C566A;
+.privateChannels-1nO12o {
+	background-color: transparent;
 }
 
-.hljs-doctag {
-  color: #8FBCBB;
+.root-SR8cQa {
+	background-color: var(--background-profile-expand);
 }
 
-.hljs-meta,
-.hljs-meta-keyword {
-  color: #5E81AC;
+.container-PNkimc {
+	background-color: transparent;
 }
 
-.hljs-meta-string {
-  color: #A3BE8C;
+.inset-3sAvek {
+	background-color: var(--background-secondary) !important;
 }
 
-.hljs-attr {
-  color: #8FBCBB;
+.container-1r6BKw.themed-ANHk51 {
+	background-color: var(--background-secondary);
 }
 
-.hljs-attribute {
-  color: #D8DEE9;
+.wrapper-1Rf91z {
+	background-color: var(--background-secondary);
 }
 
-.hljs-builtin-name {
-  color: #81A1C1;
+.childWrapper-anI2G9 {
+	background-color: var(--background-logo);
 }
 
-.hljs-name {
-  color: #81A1C1;
+.circleIconButton-jET_ig {
+	background-color: var(--background-logo);
 }
 
-.hljs-section {
-  color: #88C0D0;
+.searchBar-3dMhjb {
+	background-color: var(--background-search-bar);
 }
 
-.hljs-tag {
-  color: #81A1C1;
+.searchBar-6Kv8R2 {
+	-webkit-box-shadow: none;
+	box-shadow: none;
 }
 
-.hljs-variable {
-  color: #D8DEE9;
+.searchHeader-1l-wpR {
+	-webkit-box-shadow: none;
+	box-shadow: none;
 }
 
-.hljs-template-variable {
-  color: #D8DEE9;
+.channelName-1QajIf {
+	background-color: transparent;
 }
 
-.hljs-template-tag {
-  color: #5E81AC;
+.searchResult-3pzFAB:before {
+	background-image: none;
 }
 
-.abnf .hljs-attribute {
-  color: #88C0D0;
+.searchResult-3pzFAB:after {
+	background-image: none;
 }
 
-.abnf .hljs-symbol {
-  color: #EBCB8B;
+.perksModal-fSYqOq {
+	background-color: transparent !important;
 }
 
-.apache .hljs-attribute {
-  color: #88C0D0;
+.ctaBar-2UsjF2 {
+	background-color: var(--background-attachments) !important;
 }
 
-.apache .hljs-section {
-  color: #81A1C1;
+.tierBody-16Chc9 {
+	background-color: var(--background-secondary-chat) !important;
 }
 
-.arduino .hljs-built_in {
-  color: #88C0D0;
+.perk-2WeBWW {
+	background-color: var(--background-attachments) !important;
 }
 
-.aspectj .hljs-meta {
-  color: #D08770;
+.content-yTz4x3:before {
+	-webkit-box-shadow: none;
+	box-shadow: none;
 }
 
-.aspectj > .hljs-title {
-  color: #88C0D0;
+.tabBody-3YRQ8W:before {
+	-webkit-box-shadow: none;
+	box-shadow: none;
 }
 
-.bnf .hljs-attribute {
-  color: #8FBCBB;
+.container-19hC9u:before {
+	-webkit-box-shadow: none;
+	box-shadow: none;
 }
 
-.clojure .hljs-name {
-  color: #88C0D0;
+.container-xm7Ad0:before {
+	-webkit-box-shadow: none;
+	box-shadow: none;
 }
 
-.clojure .hljs-symbol {
-  color: #EBCB8B;
+.searchBar-6Kv8R2 .searchBarComponent-32dTOx {
+	background-color: var(--background-search-bar);
 }
 
-.coq .hljs-built_in {
-  color: #88C0D0;
+.scroller-1JbKMe {
+	background-color: transparent;
 }
 
-.cpp .hljs-meta-string {
-  color: #8FBCBB;
+.scroller-2TZvBN {
+	background-color: transparent;
 }
 
-.css .hljs-built_in {
-  color: #88C0D0;
+.quickswitcher-3JagVE {
+	background-color: var(--background-switcher);
 }
 
-.css .hljs-keyword {
-  color: #D08770;
+.wrapper-2aW0bm {
+	background-color: var(--background-primary-alt);
 }
 
-.diff .hljs-meta {
-  color: #8FBCBB;
+.searchResultMessage-2VxO12.hit-NLlWXA {
+	background-color: var(--background-primary-alt);
 }
 
-.ebnf .hljs-attribute {
-  color: #8FBCBB;
+.scroller-zPkAnE {
+	background-color: transparent;
 }
 
-.glsl .hljs-built_in {
-  color: #88C0D0;
+.embedFull-2tM8-- {
+	background-color: var(--background-attachments);
 }
 
-.groovy .hljs-meta:not(:first-child) {
-  color: #D08770;
+.messagesWrapper-3lZDfY {
+	margin-bottom: 8px;
 }
 
-.haxe .hljs-meta {
-  color: #D08770;
+.panels-j1Uci_ {
+	background-color: transparent;
 }
 
-.java .hljs-meta {
-  color: #D08770;
+.titleBar-AC4pGV {
+	background-color: var(--background-titlebar);
 }
 
-.ldif .hljs-attribute {
-  color: #8FBCBB;
+.uploadArea-3QgLtW {
+	background-color: var(--background-lights-out);
 }
 
-.lisp .hljs-name {
-  color: #88C0D0;
+.backdropWithLayer-3_uhz4 {
+	background-color: var(--background-lights-out) !important;
 }
 
-.lua .hljs-built_in {
-  color: #88C0D0;
+.backdrop-1wrmKB {
+	background-color: var(--background-lights-out) !important;
 }
 
-.moonscript .hljs-built_in {
-  color: #88C0D0;
+.downloadLink-1ywL9o {
+	color: var(--text-lights-out) !important;
 }
 
-.nginx .hljs-attribute {
-  color: #88C0D0;
+.bg-AYqtMd {
+	-webkit-mask-image: linear-gradient(#000f, #0000) !important;
 }
 
-.nginx .hljs-section {
-  color: #5E81AC;
+.scrollableContainer-2NUZem {
+	background-color: var(--background-chatbox);
 }
-
-.pf .hljs-built_in {
-  color: #88C0D0;
-}
-
-.processing .hljs-built_in {
-  color: #88C0D0;
-}
-
-.scss .hljs-keyword {
-  color: #81A1C1;
-}
-
-.stylus .hljs-keyword {
-  color: #81A1C1;
-}
-
-.swift .hljs-meta {
-  color: #D08770;
-}
-
-.vim .hljs-built_in {
-  color: #88C0D0;
-  font-style: italic;
-}
-
-.yaml .hljs-meta {
-  color: #D08770;
-}
-
